@@ -1,3 +1,5 @@
+comand: protoc --go_out=./pb --go-grpc_out=./pb catalog.proto
+
 ```
 go-ecommerce-app
 ├─ account
@@ -13,8 +15,20 @@ go-ecommerce-app
 │  │  └─ account_grpc.pb.go
 │  ├─ repository.go
 │  ├─ server.go
-│  └─ service.go
+│  ├─ service.go
+│  └─ up.sql
 ├─ catalog
+│  ├─ app.dockerfile
+│  ├─ catalog.proto
+│  ├─ client.go
+│  ├─ cmd
+│  │  └─ catalog
+│  │     └─ main.go
+│  ├─ db.dockerfile
+│  ├─ pb
+│  ├─ repository.go
+│  ├─ server.go
+│  └─ service.go
 ├─ docker-compose.yaml
 ├─ go.mod
 ├─ go.sum
